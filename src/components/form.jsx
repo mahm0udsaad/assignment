@@ -23,7 +23,7 @@ function MaterialUIForm({ close }) {
     <img
     loading="lazy"
     src={GroupImage}
-    className="aspect-[1.25] w-[35px] my-3 overflow-hidden max-w-full self-start"
+    className="aspect-[1.25] w-[100px] sm:w-[35px] my-3 overflow-hidden max-w-full self-start"
     />
     <div className="text-neutral-700 text-2xl font-semibold mt-1">
     Buy Domain
@@ -186,7 +186,7 @@ function MaterialUIForm({ close }) {
     </Grid>
     </form>
     </Container>
-    <section className="bg-slate-50 flex w-[354px] max-w-full grow flex-col -mr-5 mt-10 pl-6 pr-7 py-9 rounded-xl self-center max-md:px-5">
+    <section className="hidden bg-slate-50 sm:flex w-[354px] max-w-full grow flex-col -mr-5 mt-10 pl-6 pr-7 py-9 rounded-xl self-center max-md:px-5">
       <h2 className="text-neutral-700 text-lg font-medium capitalize whitespace-nowrap self-start">
         Domain Details
       </h2>

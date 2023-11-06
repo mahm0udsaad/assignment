@@ -42,7 +42,7 @@ export const Dashboard = () =>{
         <div className="flex  flex-col items-stretch w-5/6 mx-auto ml-5 max-md:w-full max-md:ml-0">
         <div className=" flex grow w-11/12 flex-col w-full ml-auto pt-10 pb-12 max-md:max-w-full">
         <SearchBar />
-          <div className="flex w-full max-w-[1361px] flex-col   max-md:max-w-full max-md:pl-5">
+          <div className="hidden  sm:flex w-full max-w-[1361px] flex-col   max-md:max-w-full max-md:pl-5">
             <div className="text-neutral-400 text-base font-medium  max-md:max-w-full">
               Dashboard/domains
             </div>
@@ -58,7 +58,7 @@ export const Dashboard = () =>{
                 </div>
               </div>
             </div>
-            <div className="px-8 flex w-full items-start justify-between gap-5 mt-7 max-md:max-w-full max-md:flex-wrap max-md:justify-center">
+            <div className="px-8 pr-28 flex w-full items-start justify-between gap-5 mt-7 max-md:max-w-full max-md:flex-wrap max-md:justify-center">
               <div className="flex items-center justify-between gap-1.5 max-md:justify-center">
               <Checkbox />
                 <div className="text-slate-950 text-md opacity-70 ">
@@ -72,7 +72,7 @@ export const Dashboard = () =>{
                   </div>
                   <MdOutlineArrowDropDown />
                 </div>
-                <div className="items-start  flex justify-between mr-12">
+                <div className="items-start flex w-40 ">
                   <div className="text-slate-950 text-md opacity-70 mx-3">
                     Status
                   </div>
@@ -91,7 +91,7 @@ export const Dashboard = () =>{
           </div>
           <div className="w-full   px-5 max-md:max-w-full">
             <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-              <div className="flex flex-col w-full gap-4">
+              <div className="flex sm:mt-0 mt-8 flex-col w-full gap-4">
               {rowData.map((data, index) => (
                   <Row
                     key={index}
