@@ -3,6 +3,7 @@ import { Container, Grid, TextField, Button, Typography } from '@mui/material';
 import { useForm, Controller } from 'react-hook-form';
 import { AiOutlineEye } from 'react-icons/ai';
 import { BsCheck2Circle } from 'react-icons/bs';
+import GroupImage from './assets/Group.png';
 
 function MaterialUIForm({ close }) {
   const {
@@ -21,7 +22,7 @@ function MaterialUIForm({ close }) {
     <div className="flex py-8 items-start gap-2 px-5">
     <img
     loading="lazy"
-    src="./assets/Group.png"
+    src={GroupImage}
     className="aspect-[1.25] w-[35px] my-3 overflow-hidden max-w-full self-start"
     />
     <div className="text-neutral-700 text-2xl font-semibold mt-1">
