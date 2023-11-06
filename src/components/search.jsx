@@ -1,7 +1,7 @@
 import { TextField } from '@mui/material';
 import React from 'react';
 import { BsBell ,BsSearch} from 'react-icons/bs';
-import profile from "./assets/profile.jpg"
+import profile from "../assets/profile.jpg"
 
 const SearchBar = () => {
   const handleSearch = (event) => {

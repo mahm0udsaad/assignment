@@ -3,7 +3,7 @@ import { Container, Grid, TextField, Button, Typography } from '@mui/material';
 import { useForm, Controller } from 'react-hook-form';
 import { AiOutlineEye } from 'react-icons/ai';
 import { BsCheck2Circle } from 'react-icons/bs';
-import GroupImage from './assets/Group.png';
+import GroupImage from '../assets/Group.png';
 
 function MaterialUIForm({ close }) {
   const {
