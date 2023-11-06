@@ -8,21 +8,29 @@ import {
 
 import {AiOutlineEye } from 'react-icons/ai'
 import {BsCalendarDateFill } from 'react-icons/bs'
+import {IoIosArrowForward } from 'react-icons/io'
 import MaterialUIForm from './form';
 const Row = ({ item }) => {
    const [ statusBg , setStatusBg ] = React.useState('')
+   const [ statusColor , setStatusColor] = React.useState('')
+
    const [open, setOpen] = React.useState(false);
    const dialog = React.useRef(null)
    React.useEffect(()=>{
     switch (item.statusText) {
         case "Running": 
-        setStatusBg('green')
+        setStatusBg('#cfffcf')
+        setStatusColor('#00b400')
             break;
             case "Will Expire":
-                setStatusBg('yellow')
+              
+                setStatusBg('#ffdebe')
+                setStatusColor('#F29339')
             break;
         default:
-            setStatusBg('red')
+            setStatusBg('#ffbdbd')
+            setStatusColor('red')
+
             break;
     }
    },[])
@@ -52,16 +60,12 @@ const Row = ({ item }) => {
       <div className="text-black text-sm font-medium self-center my-auto">
         {item.price}
       </div>
-      <div className={`bg-${statusBg}-600 bg-opacity-10 self-stretch flex w-[172px] max-w-full items-start justify-between gap-3 pl-12 pr-7 py-3 rounded-3xl max-md:px-5`}>
+      <div style={{ backgroundColor: `${statusBg}` , color: `${statusColor}`}} className={`bg-${statusBg}-600 bg-opacity-10 self-stretch flex w-[172px] max-w-full items-start justify-between gap-3 pl-12 pr-7 py-3 rounded-3xl max-md:px-5`}>
         <div className={`text-${statusBg}-600 text-center text-xs font-medium self-center my-auto`}>
           {item.statusText}
         </div>
-        <img
-          loading="lazy"
-          src={item.statusImageSrc}
-          className="aspect-square object-contain object-center w-6 -rotate-90 overflow-hidden self-stretch max-w-full"
-          alt="Status"
-        />
+        <IoIosArrowForward style={{ color:`${statusColor}`}} />
+
       </div>
       <div className="self-center flex items-center gap-2.5 my-auto ">
         <BsCalendarDateFill className='text-blue-600' />
