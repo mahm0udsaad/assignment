@@ -20,7 +20,7 @@ const SearchBar = () => {
       <BsBell className="aspect-square object-contain object-center w-[18px] overflow-hidden self-center max-w-full my-auto" />
       <BsSearch className="aspect-[0.83] object-contain object-center w-[19px] overflow-hidden self-center max-w-full my-auto" />
       <div className="img-wrapper w-12 h-12 mt-1.5">
-      <img className="w-full h-full rounded-full" src="/assets/profile.jpg" alt="" />
+      <img className="w-full h-full rounded-full" src="./assets/profile.jpg" alt="" />
       </div>
     </div>
   );
