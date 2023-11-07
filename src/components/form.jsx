@@ -19,7 +19,7 @@ function MaterialUIForm({ close }) {
   return (
     <div className="flex w-full">
     <Container>
-    <div className="flex py-8 items-start gap-2 px-5">
+    <div className="flex py-8 items-start gap-2 sm:px-5">
     <img
     loading="lazy"
     src={GroupImage}
@@ -32,7 +32,7 @@ function MaterialUIForm({ close }) {
     </p>
     </div>
     </div>
-    <form className='px-8 pb-4' onSubmit={handleSubmit(onSubmit)}>
+    <form className='sm:px-8 pb-4' onSubmit={handleSubmit(onSubmit)}>
     <Grid container spacing={2}>
         <Grid item xs={12} sm={6}>
         <Typography variant="h6">First Name</Typography>
@@ -178,7 +178,7 @@ function MaterialUIForm({ close }) {
             )}
         />
         </Grid>
-        <Grid item xs={12}>
+        <Grid className='flex justify-center' item xs={12}>
         <Button sx={ { borderRadius: 28 } }  type="submit" variant="contained" color="success" size="medium">
             Buy Now
         </Button>

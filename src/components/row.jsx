@@ -81,9 +81,7 @@ const Row = ({ item }) => {
 </div>
      {open && (
        <Dialog maxWidth="lg" open={open} onClose={handleClose} BackdropComponent={Backdrop}>
-       <Paper style={{ width: '98%' }}>
            <MaterialUIForm close={handleClose} />
-       </Paper>
      </Dialog>
         )}
         </>
